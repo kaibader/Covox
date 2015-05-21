@@ -13641,11 +13641,11 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 <instance part="JP1" gate="A" x="-2.54" y="66.04" rot="MR0"/>
 <instance part="JP2" gate="G$1" x="-2.54" y="43.18" rot="MR0"/>
 <instance part="JP3" gate="G$1" x="223.52" y="20.32"/>
-<instance part="CN1" gate="G$1" x="7.62" y="106.68"/>
-<instance part="P+1" gate="VCC" x="20.32" y="121.92"/>
-<instance part="GND1" gate="1" x="20.32" y="96.52"/>
+<instance part="CN1" gate="G$1" x="215.9" y="66.04" rot="MR0"/>
+<instance part="P+1" gate="VCC" x="203.2" y="81.28" rot="MR0"/>
+<instance part="GND1" gate="1" x="203.2" y="60.96" rot="MR0"/>
 <instance part="GND2" gate="1" x="119.38" y="81.28"/>
-<instance part="GND3" gate="1" x="203.2" y="2.54"/>
+<instance part="GND3" gate="1" x="203.2" y="5.08"/>
 <instance part="IC1" gate="A" x="30.48" y="22.86"/>
 <instance part="R18" gate="G$1" x="195.58" y="17.78" rot="R90"/>
 <instance part="JP4" gate="A" x="-2.54" y="25.4" rot="MR0"/>
@@ -13961,7 +13961,7 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 <wire x1="220.98" y1="20.32" x2="203.2" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="20.32" x2="203.2" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="12.7" x2="203.2" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="12.7" x2="203.2" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="12.7" x2="195.58" y2="12.7" width="0.1524" layer="91"/>
 <junction x="203.2" y="12.7"/>
 <pinref part="R18" gate="G$1" pin="1"/>
@@ -13975,11 +13975,11 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 <segment>
 <pinref part="CN1" gate="G$1" pin="GNDBREAK"/>
 <pinref part="CN1" gate="G$1" pin="GND"/>
-<wire x1="10.16" y1="111.76" x2="10.16" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="71.12" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="10.16" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="109.22" x2="20.32" y2="99.06" width="0.1524" layer="91"/>
-<junction x="10.16" y="109.22"/>
+<wire x1="213.36" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="68.58" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
+<junction x="213.36" y="68.58"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -13991,8 +13991,8 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 <segment>
 <pinref part="CN1" gate="G$1" pin="PWR"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="10.16" y1="114.3" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="114.3" x2="20.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="73.66" x2="203.2" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="73.66" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
