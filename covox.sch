@@ -13580,7 +13580,7 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 </class>
 </classes>
 <parts>
-<part name="IC2" library="74xx-eu" deviceset="74*373" device="N" technology="HCT"/>
+<part name="IC2" library="74xx-eu" deviceset="74*373" device="N" technology="HCT" value="74HCT373"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0204/7" value="15k"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="0204/7" value="15k"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="0204/7" value="15k"/>
@@ -13608,7 +13608,7 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="IC1" library="74xx-eu" deviceset="74*164" device="N" technology="HC"/>
+<part name="IC1" library="74xx-eu" deviceset="74*164" device="N" technology="HC" value="74HCT164"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="0204/7" value="47k (optional)"/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X4" device="" value="SER-IN"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="AUDIO-JACK" device="SPECIAL_POGO_PINS"/>
