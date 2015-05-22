@@ -13518,6 +13518,7 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <part name="R18" library="rcl" deviceset="R-EU_" device="0204/7" value="47k (optional)"/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X5" device="" value="SER-IN"/>
 <part name="JP6" library="KaiBader" deviceset="AUDIO-JACK-3.5MM" device=""/>
+<part name="P+2" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13556,6 +13557,7 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <instance part="R18" gate="G$1" x="195.58" y="17.78" rot="R90"/>
 <instance part="JP3" gate="A" x="-2.54" y="25.4" rot="MR0"/>
 <instance part="JP6" gate="G$1" x="220.98" y="35.56" rot="MR0"/>
+<instance part="P+2" gate="VCC" x="12.7" y="35.56" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -13899,6 +13901,12 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="213.36" y1="73.66" x2="203.2" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="73.66" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="A" pin="1"/>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
+<wire x1="0" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="30.48" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
