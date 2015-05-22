@@ -13508,17 +13508,18 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="E2-4" value="100nF"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X8" device="" value="PAR-IN"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X2" device="" value="LATCH"/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X2" device="" value="AUDIO"/>
 <part name="CN1" library="KaiBader" deviceset="POWERJACK" device=""/>
-<part name="P+1" library="supply1" deviceset="VCC" device=""/>
+<part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="74xx-eu" deviceset="74*164" device="N" technology="HC" value="74HCT164"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="0204/7" value="47k (optional)"/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X5" device="" value="SER-IN"/>
-<part name="JP6" library="KaiBader" deviceset="AUDIO-JACK-3.5MM" device=""/>
-<part name="P+2" library="supply1" deviceset="VCC" device=""/>
+<part name="JP5" library="KaiBader" deviceset="AUDIO-JACK-3.5MM" device=""/>
+<part name="P+1" library="supply1" deviceset="VCC" device=""/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X2" device="" value="PWR"/>
 </parts>
 <sheets>
 <sheet>
@@ -13547,17 +13548,18 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <instance part="C1" gate="G$1" x="185.42" y="22.86" rot="R90"/>
 <instance part="JP1" gate="A" x="-2.54" y="66.04" rot="MR0"/>
 <instance part="JP2" gate="G$1" x="-2.54" y="43.18" rot="MR0"/>
-<instance part="JP5" gate="G$1" x="223.52" y="20.32"/>
+<instance part="JP6" gate="G$1" x="223.52" y="20.32"/>
 <instance part="CN1" gate="G$1" x="215.9" y="66.04" rot="MR0"/>
-<instance part="P+1" gate="VCC" x="203.2" y="81.28" rot="MR0"/>
+<instance part="P+2" gate="VCC" x="203.2" y="81.28" rot="MR0"/>
 <instance part="GND2" gate="1" x="203.2" y="60.96" rot="MR0"/>
 <instance part="GND1" gate="1" x="119.38" y="81.28"/>
 <instance part="GND3" gate="1" x="203.2" y="5.08"/>
 <instance part="IC1" gate="A" x="30.48" y="20.32"/>
 <instance part="R18" gate="G$1" x="195.58" y="17.78" rot="R90"/>
 <instance part="JP3" gate="A" x="-2.54" y="25.4" rot="MR0"/>
-<instance part="JP6" gate="G$1" x="220.98" y="35.56" rot="MR0"/>
-<instance part="P+2" gate="VCC" x="12.7" y="35.56" rot="MR0"/>
+<instance part="JP5" gate="G$1" x="220.98" y="35.56" rot="MR0"/>
+<instance part="P+1" gate="VCC" x="12.7" y="35.56" rot="MR0"/>
+<instance part="JP4" gate="G$1" x="187.96" y="68.58" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -13864,7 +13866,7 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 </net>
 <net name="GND" class="1">
 <segment>
-<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="JP6" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="220.98" y1="20.32" x2="203.2" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="20.32" x2="203.2" y2="12.7" width="0.1524" layer="91"/>
@@ -13878,7 +13880,7 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <wire x1="203.2" y1="20.32" x2="203.2" y2="43.18" width="0.1524" layer="91"/>
 <junction x="203.2" y="20.32"/>
 <wire x1="203.2" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="CN1" gate="G$1" pin="GNDBREAK"/>
@@ -13888,6 +13890,9 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <wire x1="213.36" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="68.58" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
 <junction x="213.36" y="68.58"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="190.5" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
+<junction x="203.2" y="68.58"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -13898,13 +13903,17 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <net name="VCC" class="1">
 <segment>
 <pinref part="CN1" gate="G$1" pin="PWR"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="213.36" y1="73.66" x2="203.2" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="73.66" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="71.12" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="71.12" x2="203.2" y2="73.66" width="0.1524" layer="91"/>
+<junction x="203.2" y="73.66"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="1"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="0" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 </segment>
@@ -13944,7 +13953,7 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <net name="N$32" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="-"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="JP6" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="22.86" x2="195.58" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="22.86" x2="205.74" y2="22.86" width="0.1524" layer="91"/>
@@ -13953,8 +13962,8 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <wire x1="210.82" y1="33.02" x2="205.74" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="33.02" x2="205.74" y2="22.86" width="0.1524" layer="91"/>
 <junction x="205.74" y="22.86"/>
-<pinref part="JP6" gate="G$1" pin="2"/>
-<pinref part="JP6" gate="G$1" pin="3"/>
+<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="JP5" gate="G$1" pin="3"/>
 <wire x1="210.82" y1="40.64" x2="205.74" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="40.64" x2="205.74" y2="33.02" width="0.1524" layer="91"/>
 <junction x="205.74" y="33.02"/>
