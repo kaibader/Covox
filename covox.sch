@@ -13336,24 +13336,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </library>
 <library name="KaiBader">
 <packages>
-<package name="POWERJACK">
-<description>&lt;b&gt;Power Jack&lt;/b&gt;&lt;br /&gt;
-Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
-<wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="0.1" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
-<wire x1="4.5" y1="3" x2="4.5" y2="8.3" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="13.7" x2="4.5" y2="13" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
-<pad name="PWR" x="0" y="13.7" drill="2.9972" diameter="4.318"/>
-<pad name="GND" x="0" y="7.7" drill="2.9972" diameter="4.318"/>
-<pad name="GNDBREAK" x="4.7" y="10.7" drill="2.9972" diameter="4.318" rot="R90"/>
-<text x="5.08" y="6.35" size="1.27" layer="21">&gt;NAME</text>
-<text x="5.08" y="3.81" size="1.27" layer="21">&gt;VALUE</text>
-</package>
 <package name="AUDIO-JACK-3.5MM">
 <description>&lt;b&gt;3.5mm Audio Jack&lt;/b&gt; SJ1-351X Series</description>
 <pad name="1" x="1.8" y="5.8" drill="1.4" diameter="2.4"/>
@@ -13391,24 +13373,51 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <text x="3.81" y="5.08" size="1.27" layer="51">&gt;NAME</text>
 <text x="3.81" y="3.175" size="1.27" layer="51">&gt;VALUE</text>
 </package>
-</packages>
-<symbols>
-<symbol name="POWERJACK">
+<package name="POWERJACK">
 <description>&lt;b&gt;Power Jack&lt;/b&gt;&lt;br /&gt;
 Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
-<wire x1="-10.16" y1="2.54" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<text x="-10.16" y="10.16" size="1.778" layer="96">&gt;Value</text>
-<text x="-10.16" y="0" size="1.778" layer="95">&gt;Name</text>
-<rectangle x1="-10.16" y1="7.112" x2="0" y2="8.128" layer="94"/>
-<pin name="GNDBREAK" x="2.54" y="5.08" visible="off" length="short" rot="R180"/>
-<pin name="GND" x="2.54" y="2.54" visible="off" length="short" rot="R180"/>
-<pin name="PWR" x="2.54" y="7.62" visible="off" length="short" rot="R180"/>
-</symbol>
+<wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="3" x2="4.5" y2="8.3" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="13.7" x2="4.5" y2="13" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
+<pad name="PWR" x="0" y="13.7" drill="2.9972" diameter="4.318"/>
+<pad name="GND" x="0" y="7.7" drill="2.9972" diameter="4.318"/>
+<pad name="GNDBREAK" x="4.7" y="10.7" drill="2.9972" diameter="4.318" rot="R90"/>
+<text x="5.08" y="6.35" size="1.27" layer="21">&gt;NAME</text>
+<text x="5.08" y="3.81" size="1.27" layer="21">&gt;VALUE</text>
+</package>
+<package name="POWERJACK_SLOT">
+<description>&lt;b&gt;Power Jack&lt;/b&gt;&lt;br /&gt;
+Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).&lt;br/&gt;
+Caution: This package might not be accepted by some PCB manufacturers.</description>
+<wire x1="4.5" y1="13.7" x2="2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="4.5" y2="3" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="0.1" x2="-4.5" y2="0.1" width="0.2032" layer="51"/>
+<wire x1="4.5" y1="3" x2="4.5" y2="8.3" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="13.7" x2="4.5" y2="13" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
+<pad name="PWR" x="0" y="13.7" drill="1.3" diameter="4" shape="octagon"/>
+<pad name="GND" x="0" y="7.7" drill="1.3" diameter="4" shape="octagon"/>
+<pad name="GNDBREAK" x="4.7" y="10.7" drill="1.3" diameter="4" shape="octagon" rot="R90"/>
+<text x="5.08" y="6.35" size="1.27" layer="21">&gt;NAME</text>
+<text x="5.08" y="3.81" size="1.27" layer="21">&gt;VALUE</text>
+<hole x="-0.8" y="13.7" drill="1.3"/>
+<hole x="0.8" y="13.7" drill="1.3"/>
+<hole x="4.7" y="9.9" drill="1.3"/>
+<hole x="4.7" y="11.5" drill="1.3"/>
+<hole x="-0.8" y="7.7" drill="1.3"/>
+<hole x="0.8" y="7.7" drill="1.3"/>
+</package>
+</packages>
+<symbols>
 <symbol name="AUDIO-JACK-5PIN">
 <description>&lt;b&gt;3.5mm Audio Jack&lt;/b&gt; SJ1-3515</description>
 <pin name="1" x="10.16" y="7.62" visible="off" length="short" rot="R180"/>
@@ -13445,8 +13454,45 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <text x="10.16" y="-1.27" size="0.8128" layer="94" ratio="12" align="bottom-right">tip sw</text>
 <text x="10.16" y="-3.81" size="0.8128" layer="94" ratio="12" align="bottom-right">tip</text>
 </symbol>
+<symbol name="POWERJACK">
+<description>&lt;b&gt;Power Jack&lt;/b&gt;&lt;br /&gt;
+Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
+<wire x1="-10.16" y1="2.54" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<text x="-10.16" y="10.16" size="1.778" layer="96">&gt;Value</text>
+<text x="-10.16" y="0" size="1.778" layer="95">&gt;Name</text>
+<rectangle x1="-10.16" y1="7.112" x2="0" y2="8.128" layer="94"/>
+<pin name="GNDBREAK" x="2.54" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="2.54" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="PWR" x="2.54" y="7.62" visible="off" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="AUDIO-JACK-3.5MM" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;3.5mm Audio Jack&lt;/b&gt; SJ1-351X Series
+ (SJ1-3513/SJ1-3514/SJ13515)</description>
+<gates>
+<gate name="G$1" symbol="AUDIO-JACK-5PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AUDIO-JACK-3.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="POWERJACK" prefix="CN">
 <description>&lt;b&gt;Power Jack&lt;/b&gt;&lt;br /&gt;
 Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
@@ -13464,22 +13510,11 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <technology name=""/>
 </technologies>
 </device>
-</devices>
-</deviceset>
-<deviceset name="AUDIO-JACK-3.5MM" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;3.5mm Audio Jack&lt;/b&gt; SJ1-351X Series
- (SJ1-3513/SJ1-3514/SJ13515)</description>
-<gates>
-<gate name="G$1" symbol="AUDIO-JACK-5PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="AUDIO-JACK-3.5MM">
+<device name="-SLOT" package="POWERJACK_SLOT">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
+<connect gate="G$1" pin="PWR" pad="PWR"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13525,19 +13560,19 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="E2-4" value="100nF"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X8" device="" value="PAR-IN"/>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X2" device="" value="AUDIO"/>
-<part name="CN1" library="KaiBader" deviceset="POWERJACK" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="74xx-eu" deviceset="74*164" device="N" technology="HC" value="74HCT164"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="0204/7" value="47k (optional)"/>
-<part name="JP5" library="KaiBader" deviceset="AUDIO-JACK-3.5MM" device=""/>
+<part name="JP5" library="KaiBader" deviceset="AUDIO-JACK-3.5MM" device="" value="AUDIO"/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X2" device="" value="PWR"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X3" device="" value="LATCH"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X4" device="" value="SER-IN"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
+<part name="CN1" library="KaiBader" deviceset="POWERJACK" device="-SLOT" value="POWERJACK"/>
 </parts>
 <sheets>
 <sheet>
@@ -13566,7 +13601,6 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <instance part="C1" gate="G$1" x="185.42" y="22.86" rot="R90"/>
 <instance part="JP1" gate="A" x="-2.54" y="66.04" rot="MR0"/>
 <instance part="JP6" gate="G$1" x="223.52" y="20.32"/>
-<instance part="CN1" gate="G$1" x="215.9" y="66.04" rot="MR0"/>
 <instance part="P+1" gate="VCC" x="203.2" y="81.28" rot="MR0"/>
 <instance part="GND4" gate="1" x="203.2" y="60.96" rot="MR0"/>
 <instance part="GND3" gate="1" x="119.38" y="81.28"/>
@@ -13579,6 +13613,7 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <instance part="GND1" gate="1" x="7.62" y="45.72" rot="R90"/>
 <instance part="JP3" gate="A" x="-2.54" y="20.32" rot="MR0"/>
 <instance part="P+2" gate="VCC" x="7.62" y="30.48" rot="MR0"/>
+<instance part="CN1" gate="G$1" x="215.9" y="66.04" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -13902,16 +13937,16 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <pinref part="JP5" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="CN1" gate="G$1" pin="GNDBREAK"/>
-<pinref part="CN1" gate="G$1" pin="GND"/>
 <wire x1="213.36" y1="71.12" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="213.36" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="68.58" x2="203.2" y2="63.5" width="0.1524" layer="91"/>
-<junction x="213.36" y="68.58"/>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
 <junction x="203.2" y="68.58"/>
+<pinref part="CN1" gate="G$1" pin="GNDBREAK"/>
+<pinref part="CN1" gate="G$1" pin="GND"/>
+<junction x="213.36" y="68.58"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -13926,7 +13961,6 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 </net>
 <net name="VCC" class="1">
 <segment>
-<pinref part="CN1" gate="G$1" pin="PWR"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="213.36" y1="73.66" x2="203.2" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="73.66" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
@@ -13934,6 +13968,7 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 <wire x1="190.5" y1="71.12" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="71.12" x2="203.2" y2="73.66" width="0.1524" layer="91"/>
 <junction x="203.2" y="73.66"/>
+<pinref part="CN1" gate="G$1" pin="PWR"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="1"/>
