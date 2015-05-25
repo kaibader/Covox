@@ -13404,17 +13404,17 @@ Caution: This package might not be accepted by some PCB manufacturers.</descript
 <wire x1="-4.5" y1="3" x2="-4.5" y2="13.7" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="13.7" x2="-2.4" y2="13.7" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
-<pad name="PWR" x="0" y="13.7" drill="1.3" diameter="4" shape="octagon"/>
-<pad name="GND" x="0" y="7.7" drill="1.3" diameter="4" shape="octagon"/>
-<pad name="GNDBREAK" x="4.7" y="10.7" drill="1.3" diameter="4" shape="octagon" rot="R90"/>
+<pad name="PWR@1" x="0" y="13.7" drill="1.3" diameter="4" shape="octagon"/>
+<pad name="GND@1" x="0" y="7.7" drill="1.3" diameter="4" shape="octagon"/>
+<pad name="GNDBREAK@1" x="4.7" y="10.7" drill="1.3" diameter="4" shape="octagon" rot="R90"/>
 <text x="5.08" y="6.35" size="1.27" layer="21">&gt;NAME</text>
 <text x="5.08" y="3.81" size="1.27" layer="21">&gt;VALUE</text>
-<hole x="-0.8" y="13.7" drill="1.3"/>
-<hole x="0.8" y="13.7" drill="1.3"/>
-<hole x="4.7" y="9.9" drill="1.3"/>
-<hole x="4.7" y="11.5" drill="1.3"/>
-<hole x="-0.8" y="7.7" drill="1.3"/>
-<hole x="0.8" y="7.7" drill="1.3"/>
+<pad name="GND@2" x="-0.8" y="7.7" drill="1.3" diameter="1.5"/>
+<pad name="PWR@3" x="0.8" y="13.7" drill="1.3" diameter="1.5"/>
+<pad name="PWR@2" x="-0.8" y="13.7" drill="1.3" diameter="1.5"/>
+<pad name="GNDBREAK@2" x="4.7" y="11.5" drill="1.3" diameter="1.5"/>
+<pad name="GNDBREAK@3" x="4.7" y="9.9" drill="1.3" diameter="1.5"/>
+<pad name="GND@3" x="0.8" y="7.7" drill="1.3" diameter="1.5"/>
 </package>
 </packages>
 <symbols>
@@ -13512,9 +13512,9 @@ Standard 2.1 mm * 5.5 mm barrel jack for power (e.g. Arduino).</description>
 </device>
 <device name="-SLOT" package="POWERJACK_SLOT">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
-<connect gate="G$1" pin="PWR" pad="PWR"/>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK@1 GNDBREAK@2 GNDBREAK@3"/>
+<connect gate="G$1" pin="PWR" pad="PWR@1 PWR@2 PWR@3"/>
 </connects>
 <technologies>
 <technology name=""/>
