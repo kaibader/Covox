@@ -131,7 +131,7 @@
 <wire x1="50" y1="0" x2="50" y2="50" width="0" layer="20"/>
 <wire x1="50" y1="50" x2="0" y2="50" width="0" layer="20"/>
 <wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
-<text x="1.27" y="21.59" size="1.27" layer="21" font="vector" ratio="12">CC-BY-SA 4.0  KAI C. BADER</text>
+<text x="1.905" y="21.59" size="1.27" layer="21" font="vector" ratio="12">CC-BY-SA 4.0  KAI C. BADER</text>
 <text x="1.905" y="44.45" size="1.27" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center">7k5 x8</text>
 <text x="0.635" y="34.29" size="1.27" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center">15k x9</text>
 <text x="42.545" y="5.715" size="1.27" layer="27" font="vector" ratio="12" rot="R90">RST</text>
